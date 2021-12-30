@@ -4,7 +4,7 @@
 
 * 🖥️ Bot feito em JS
 * ⏩ Fácil De Configurar
-* 
+
 * 🧬 Comandos De FiveM
 * 🚜 Comandos De Fazenda
 * 💸 Comandos De Economia

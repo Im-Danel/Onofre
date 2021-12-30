@@ -1,15 +1,11 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js')
 const db = require('quick.db')
-
-
-
-https://github.com/vRP-Official-Developers/dunko_vrp/blob/master/vrp_discordbot/commands/groups.js
 const mysql = require('mysql'); 
 
 module.exports = {
 	data: new SlashCommandBuilder()
-    .setName("addcar")
+    .setName("addwl")
     .setDescription("[🧬] » Adicione whitelist para um jogador.")
 	.addStringOption(option => option.setName('id').setDescription('Id').setRequired(true)),
 	run: async (client, interaction) => {
@@ -57,10 +53,10 @@ module.exports = {
 			return interaction.followUp({ embeds: [ embed ]})
 		}
 
-		connection.query(`INSERT INTO vrp_user_vehicles(user_id, vehicle) VALUES ('${id}', '${carro}')`, (err, rows) => { 
+		connection.query(`UPDATE vrp_users SET whitelisted = '1' WHERE id = '${id}'`, (err, rows) => {
 			let embed = new MessageEmbed()
  
-				.setDescription(`:oncoming_automobile: | Carro: **${carro}** Adicionado para ID: **${id}**.`)
+				.setDescription(`📜 | Whitelist: Adicionado para ID: **${id}**.`)
 				.setColor("#85dac0")
  
 			return interaction.followUp({ embeds: [ embed ]})

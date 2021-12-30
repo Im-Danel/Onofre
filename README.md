@@ -1,16 +1,14 @@
-# [Scratch For Discord](https://discord.com/api/oauth2/authorize?client_id=724787832471945358&permissions=8&scope=applications.commands%20bot)
+# [Onofre, A Lagartixa](https://discord.com/api/oauth2/authorize?client_id=724787832471945358&permissions=8&scope=applications.commands%20bot)
 
 ## Features
 
-* 🖥️ No code knowledge required!  
-* ⏩ Make a bot in less than 2 minutes!  
-* 🧪 Start and test your bot directly on the site!
-* 🇫🇷 French is supported!
-* 📦 Android, MacOS, Windows and Linux apps
-
-## Example
-
-![example](./examples/example.png)
+* 🖥️ Bot feito em JS
+* ⏩ Fácil De Configurar
+* 
+* 🧬 Comandos De FiveM
+* 🚜 Comandos De Fazenda
+* 💸 Comandos De Economia
+* 🎉 Comandos De Diversão, Moderação, Botlist Entre Outros.
 
 ## Como usar
 

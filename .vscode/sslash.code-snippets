@@ -1,0 +1,19 @@
+{
+
+	"Gerar slash": {
+		"scope": "javascript",
+		"prefix": "slash",
+		"body": [
+			"const { SlashCommandBuilder } = require('@discordjs/builders');",
+			"const {MessageEmbed, MessageActionRow, MessageButton } = require('discord.js');",
+			"\nmodule.exports = {",
+			"\tdata: new SlashCommandBuilder()",
+			"\t.setName('')",
+			"\t.setDescription('[] » '),",
+			"\trun: async (client, interaction) => {\n",
+			"\t},",
+			"};"
+
+		]
+	}
+}

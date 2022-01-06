@@ -18,6 +18,8 @@ module.exports = {
           //return command.data.name == '[🧬]'
           return infos.includes("[🧬]")
         })
+
+        console.log('oi')
         
         console.log(listafiltrada1)
         return infos;

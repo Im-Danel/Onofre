@@ -14,6 +14,12 @@ module.exports = {
       const commandList = commands.map((command) => {
         const infos = `\n/${command.data.name} - ${command.data.description}`;
 
+        const listafiltrada1 = commandList.filter((state) => {
+          //return command.data.name == '[🧬]'
+          return infos.includes("[🧬]")
+        })
+        
+        console.log(listafiltrada1)
         return infos;
       });
 

@@ -14,7 +14,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
   const user = interaction.options.getUser('user')
   const pessoa = interaction.guild.members.cache.get(user.id) || await interaction.guild.members.fetch(user.id).catch(err => {})
 
-  if (!pessoa) return interaction.followUp({ content: `❌ | ${interaction.user} Você precisa mencionar alguém para bater`, ephemeral: true })
+if (!pessoa) return interaction.followUp({ content: `❌ | ${interaction.user} Você precisa mencionar alguém para bater`, ephemeral: true })
 
 if (pessoa.id === interaction.user.id) return interaction.followUp({ content: `❌ | ${interaction.user} Você não pode se bater!`, ephemeral: true })
 
@@ -37,7 +37,6 @@ if (pessoa.id === interaction.user.id) return interaction.followUp({ content: `�
     .setThumbnail(user.displayAvatarURL())
     .setFooter("👋 Tapa")
 
-    const { body } = await superagent.get('https://nekos.life/api/v2/img/slap')
     let tapa = new MessageEmbed()
     .setTitle(`😤 👋 Tapa ✨`)
     .setDescription(`💓${pessoa} retribuiu o Tapa de ${interaction.user}!`)

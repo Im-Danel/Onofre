@@ -13,12 +13,13 @@ module.exports = {
     const user = interaction.options.getUser('user')
     const quaant = interaction.options.getString('quant')
  
-    let caixa = db.fetch(`caixa_${user}`);
+    let caixa = db.fetch(`caixa_${user.id}`);
     if(caixa == null) caixa = 0;
 
-    db.add(`caixa_${user}`, quaant);
+    
+    db.add(`caixa_${user.id}`, quaant);
 
-    let caixa2 = db.fetch(`caixa_${user}`);
+    let caixa2 = db.fetch(`caixa_${user.id}`);
     if(caixa2 == null) caixa2 = 0;
 
     let embed = new MessageEmbed()

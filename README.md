@@ -1,7 +1,7 @@
 # Onofre, A Lagartixa
 
 > ⚠️ **Projeto Legado (2021)**  
-> Este é um bot antigo que desenvolvi quando comecei a programar. O código está recheado de gambiarras, convenções duvidosas e provavelmente quebrado (*se funcionar é puro milagre* 😂).  
+> Este é um bot antigo que desenvolvi quando comecei a programar. O código está recheado de gambiarras, convenções duvidosas e provavelmente quebrado (*se funcionar é puro milagre*).  
 > Mantido público apenas como recordação nostálgica do meu início e da minha evolução na programação.
 
 ---
